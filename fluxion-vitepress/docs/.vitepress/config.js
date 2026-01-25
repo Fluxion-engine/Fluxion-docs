@@ -72,7 +72,15 @@ export default {
 
     head: [
         ['link', { rel: 'icon', href: '/logo.png' }],
-        ['meta', { name: 'theme-color', content: '#99d19c' }]
+        ['meta', { name: 'theme-color', content: '#99d19c' }],
+        ['meta', { property: 'og:type', content: 'website' }],
+        ['meta', { property: 'og:title', content: 'Fluxion Engine' }],
+        ['meta', { property: 'og:description', content: 'Mathematical Animation Engine for Programmatic Videos. Create precise, beautiful animations with Python.' }],
+        ['meta', { property: 'og:image', content: '/social-preview.png' }],
+        ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
+        ['meta', { name: 'twitter:title', content: 'Fluxion Engine' }],
+        ['meta', { name: 'twitter:description', content: 'Mathematical Animation Engine for Programmatic Videos. Create precise, beautiful animations with Python.' }],
+        ['meta', { name: 'twitter:image', content: '/social-preview.png' }]
     ],
 
     markdown: {
