@@ -3,9 +3,9 @@
     "version": "1.0.0",
     "description": "Fluxion Documentation - Mathematical Animation Engine",
     "scripts": {
-        "docs:dev": "vitepress dev docs",
-        "docs:build": "vitepress build docs",
-        "docs:preview": "vitepress preview docs",
+        "docs:dev": "node node_modules/vitepress/bin/vitepress.js dev docs",
+        "docs:build": "node node_modules/vitepress/bin/vitepress.js build docs",
+        "docs:preview": "node node_modules/vitepress/bin/vitepress.js preview docs",
         "dev": "npm run docs:dev",
         "build": "npm run docs:build",
         "start": "npm run docs:dev"
@@ -16,7 +16,7 @@
         "documentation"
     ],
     "author": "Fluxion Community",
-    "devDependencies": {
+    "dependencies": {
         "vitepress": "^1.6.4"
     },
     "license": "MIT"
