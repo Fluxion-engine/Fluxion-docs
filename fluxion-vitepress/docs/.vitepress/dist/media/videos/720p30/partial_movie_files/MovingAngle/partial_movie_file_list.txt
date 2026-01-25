@@ -1,0 +1,6 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/satya/Documents/GitHub/fluxion/Fluxion-docs/source/media/videos/720p30/partial_movie_files/MovingAngle/1987512680_2688965532_4277727532.mp4'
+file 'file:C:/Users/satya/Documents/GitHub/fluxion/Fluxion-docs/source/media/videos/720p30/partial_movie_files/MovingAngle/2538612922_75363501_2915352157.mp4'
+file 'file:C:/Users/satya/Documents/GitHub/fluxion/Fluxion-docs/source/media/videos/720p30/partial_movie_files/MovingAngle/2538612922_4078998664_3867305713.mp4'
+file 'file:C:/Users/satya/Documents/GitHub/fluxion/Fluxion-docs/source/media/videos/720p30/partial_movie_files/MovingAngle/2538612922_4077734004_3748085109.mp4'
+file 'file:C:/Users/satya/Documents/GitHub/fluxion/Fluxion-docs/source/media/videos/720p30/partial_movie_files/MovingAngle/2538612922_3421528765_4084446033.mp4'

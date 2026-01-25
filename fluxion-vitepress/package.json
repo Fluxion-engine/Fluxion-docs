@@ -1,0 +1,23 @@
+{
+    "name": "fluxion-docs",
+    "version": "1.0.0",
+    "description": "Fluxion Documentation - Mathematical Animation Engine",
+    "scripts": {
+        "docs:dev": "vitepress dev docs",
+        "docs:build": "vitepress build docs",
+        "docs:preview": "vitepress preview docs",
+        "dev": "npm run docs:dev",
+        "build": "npm run docs:build",
+        "start": "npm run docs:dev"
+    },
+    "keywords": [
+        "fluxion",
+        "animation",
+        "documentation"
+    ],
+    "author": "Fluxion Community",
+    "devDependencies": {
+        "vitepress": "^1.6.4"
+    },
+    "license": "MIT"
+}

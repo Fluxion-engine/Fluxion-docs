@@ -1,0 +1,1 @@
+const o="/media/videos/logo_intro/1080p60/FluxionLogoIntro.mp4",e="/media/videos/720p30/BooleanOperations-1.mp4",i="/media/videos/720p30/SineCurveUnitCircle-1.mp4",s="/media/videos/720p30/ThreeDCameraRotation-1.mp4",t="/media/videos/720p30/ThreeDSurfacePlot-1.mp4";export{o as _,e as a,i as b,s as c,t as d};

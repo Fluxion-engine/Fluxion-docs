@@ -1,0 +1,8 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/satya/Documents/GitHub/fluxion/Fluxion-docs/source/media/videos/720p30/partial_movie_files/VoiceoverExample/1987512680_2550825152_631829896.mp4'
+file 'file:C:/Users/satya/Documents/GitHub/fluxion/Fluxion-docs/source/media/videos/720p30/partial_movie_files/VoiceoverExample/1987512680_3789429803_1666280314.mp4'
+file 'file:C:/Users/satya/Documents/GitHub/fluxion/Fluxion-docs/source/media/videos/720p30/partial_movie_files/VoiceoverExample/2538612922_93595264_16217809.mp4'
+file 'file:C:/Users/satya/Documents/GitHub/fluxion/Fluxion-docs/source/media/videos/720p30/partial_movie_files/VoiceoverExample/2538612922_3763831500_1760250969.mp4'
+file 'file:C:/Users/satya/Documents/GitHub/fluxion/Fluxion-docs/source/media/videos/720p30/partial_movie_files/VoiceoverExample/2538612922_3903758105_983151156.mp4'
+file 'file:C:/Users/satya/Documents/GitHub/fluxion/Fluxion-docs/source/media/videos/720p30/partial_movie_files/VoiceoverExample/2538612922_3391119719_3253160371.mp4'
+file 'file:C:/Users/satya/Documents/GitHub/fluxion/Fluxion-docs/source/media/videos/720p30/partial_movie_files/VoiceoverExample/2538612922_2688965532_713629656.mp4'

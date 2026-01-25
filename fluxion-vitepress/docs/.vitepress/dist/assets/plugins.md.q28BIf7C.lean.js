@@ -1,0 +1,1 @@
+import{_ as i,o as a,c as n,ag as l}from"./chunks/framework.CbQjVMS6.js";const c=JSON.parse('{"title":"Plugins","description":"","frontmatter":{},"headers":[],"relativePath":"plugins.md","filePath":"plugins.md"}'),e={name:"plugins.md"};function p(t,s,h,r,k,d){return a(),n("div",null,[...s[0]||(s[0]=[l("",40)])])}const u=i(e,[["render",p]]);export{c as __pageData,u as default};
