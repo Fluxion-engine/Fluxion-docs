@@ -1,6 +1,6 @@
 # Installation
 
-import Callout from '@site/src/components/Callout';
+
 
 ## System Requirements
 
@@ -25,7 +25,7 @@ uv add fluxion
 ### Using pip
 
 ```bash
-pip install fluxion
+pip install fluxion-engine
 ```
 
 <Callout type="note">
