@@ -1,6 +1,7 @@
 <script setup>
 import DefaultTheme from 'vitepress/theme'
 import Logo from './components/Logo.vue'
+import BuyMeACoffee from './components/BuyMeACoffee.vue'
 
 const { Layout } = DefaultTheme
 </script>
@@ -11,4 +12,5 @@ const { Layout } = DefaultTheme
       <Logo />
     </template>
   </Layout>
+  <BuyMeACoffee />
 </template>
