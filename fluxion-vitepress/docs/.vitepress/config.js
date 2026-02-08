@@ -80,7 +80,16 @@ export default {
         ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
         ['meta', { name: 'twitter:title', content: 'Fluxion Engine' }],
         ['meta', { name: 'twitter:description', content: 'Mathematical Animation Engine for Programmatic Videos. Create precise, beautiful animations with Python.' }],
-        ['meta', { name: 'twitter:image', content: '/social-preview.png' }]
+        ['meta', { name: 'twitter:image', content: '/social-preview.png' }],
+
+        // Google Analytics
+        ['script', { async: '', src: 'https://www.googletagmanager.com/gtag/js?id=G-8XX1M4DWHW' }],
+        ['script', {}, `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-8XX1M4DWHW');
+        `]
     ],
 
     markdown: {
