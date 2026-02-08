@@ -23,6 +23,9 @@
 
     --vp-c-divider: #e2e8f0;
     --vp-c-gutter: #ffffff;
+
+    /* Layout Variables */
+    --vp-nav-height: 80px;
 }
 
 .dark {
@@ -66,7 +69,7 @@ html {
 }
 
 .VPNavBar {
-    height: 80px !important;
+    height: var(--vp-nav-height) !important;
     border-bottom: none !important;
     background: transparent !important;
 }
@@ -74,8 +77,48 @@ html {
 .VPNavBarTitle {
     display: flex !important;
     align-items: center !important;
-    height: 80px !important;
+    height: var(--vp-nav-height) !important;
     border-bottom: none !important;
+}
+
+/* Fix Mobile Navigation - Only apply on mobile */
+@media (max-width: 960px) {
+    .VPNavScreen {
+        position: fixed !important;
+        top: var(--vp-nav-height) !important;
+        bottom: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        width: 100% !important;
+        height: calc(100vh - var(--vp-nav-height)) !important;
+        background-color: var(--vp-c-bg) !important;
+        z-index: 90 !important;
+        overflow-y: auto !important;
+        padding-top: 1rem !important;
+        display: block !important;
+        /* Ensure it's capable of being displayed when open */
+    }
+
+    /* Only show hamburger if the parent attempts to display it (controlled by JS) */
+    /* We don't force display:flex here to allow JS to toggle it if needed, 
+       but usually VitePress controls visibility via parents. 
+       If we need to force it visible on mobile: */
+    .VPNavBarHamburger {
+        display: flex !important;
+        height: var(--vp-nav-height) !important;
+        align-items: center !important;
+    }
+}
+
+/* Ensure hidden on desktop */
+@media (min-width: 961px) {
+    .VPNavBarHamburger {
+        display: none !important;
+    }
+
+    .VPNavScreen {
+        display: none !important;
+    }
 }
 
 /* Custom logo wrapper */
