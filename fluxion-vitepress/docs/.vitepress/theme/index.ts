@@ -147,14 +147,53 @@ export default {
                 const link = target.closest('a');
                 if (link) {
                     const href = link.getAttribute('href');
-                    if (href && href.startsWith('http') && !href.includes(window.location.hostname)) {
+                    if (href && href.startsWith('http')) {
+                        const isExternal = !href.includes(window.location.hostname);
+
+                        // Check for Social Media
+                        const socialMap: Record<string, string> = {
+                            'instagram.com': 'Instagram',
+                            'facebook.com': 'Facebook',
+                            'threads.net': 'Threads',
+                            'twitter.com': 'Twitter',
+                            'x.com': 'Twitter',
+                            'linkedin.com': 'LinkedIn',
+                            'reddit.com': 'Reddit',
+                            'youtube.com': 'YouTube',
+                            't.me': 'Telegram',
+                            'discord.com': 'Discord',
+                            'discord.gg': 'Discord'
+                        };
+
+                        let socialPlatform = null;
+                        for (const domain in socialMap) {
+                            if (href.includes(domain)) {
+                                socialPlatform = socialMap[domain];
+                                break;
+                            }
+                        }
+
                         if (typeof (window as any).gtag !== 'undefined') {
-                            (window as any).gtag('event', 'click_external_link', {
-                                'event_category': 'outbound',
-                                'event_label': href,
-                                'transport_type': 'beacon',
-                                'outbound_link_url': href
-                            });
+                            // General External Link Event
+                            if (isExternal) {
+                                (window as any).gtag('event', 'click_external_link', {
+                                    'event_category': 'outbound',
+                                    'event_label': href,
+                                    'transport_type': 'beacon',
+                                    'outbound_link_url': href
+                                });
+                            }
+
+                            // Specific Social Media Event
+                            if (socialPlatform) {
+                                (window as any).gtag('event', 'social_click', {
+                                    'event_category': 'social',
+                                    'event_label': socialPlatform,
+                                    'social_platform': socialPlatform,
+                                    'social_action': 'navigation',
+                                    'destination_url': href
+                                });
+                            }
                         }
                     }
                 }
