@@ -18,21 +18,46 @@ hero:
     - theme: alt
       text: View on GitHub
       link: https://github.com/Fluxion-engine/fluxion
-
-features:
-  - icon: 📐
-    title: Mathematical Precision
-    details: Perfect for educational content, technical videos, and complex visualizations.
-  - icon: 📦
-    title: Extensive Library
-    details: Hundreds of pre-built shapes, animations, and mathematical mobjects ready to use.
-  - icon: 🎨
-    title: Highly Customizable
-    details: Full control over colors, timing, effects, and camera movements.
-  - icon: 👥
-    title: Community Driven
-    details: Open source and built for the community, by the community.
 ---
+
+<ScrollSplitCard
+  sectionTitle="Why Fluxion?"
+  :cards="[
+    {
+      title: 'Mathematical Precision',
+      description: 'Perfect for educational content, technical videos, and complex visualizations built on real math.',
+      bgColor: 'rgba(10, 30, 10, 0.85)',
+      textColor: '#e6f4e7',
+      icon: '📐',
+      image: '/cards/fern.png'
+    },
+    {
+      title: 'Extensive Library',
+      description: 'Hundreds of pre-built shapes, animations, and mathematical mobjects ready to use out of the box.',
+      bgColor: 'rgba(5, 40, 5, 0.9)',
+      textColor: '#c8e6c9',
+      icon: '📦',
+      image: '/cards/image.png'
+    },
+    {
+      title: 'Highly Customizable',
+      description: 'Full control over colors, timing, effects, and camera movements — code is your canvas.',
+      bgColor: 'rgba(0, 20, 0, 0.92)',
+      textColor: '#a5d6a7',
+      icon: '🎨',
+      image: '/cards/image copy.png'
+    },
+    {
+      title: 'Community Driven',
+      description: 'Open source and built for the community, by the community. Join thousands of creators.',
+      bgColor: 'rgba(20, 50, 20, 0.88)',
+      textColor: '#81c784',
+      icon: '👥',
+      image: '/cards/community.png'
+    }
+  ]"
+/>
+
 
 <div class="intro-video-section">
   <h2 class="section-title">Experience Fluxion</h2>

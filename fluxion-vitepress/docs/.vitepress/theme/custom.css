@@ -209,8 +209,41 @@ html {
 .VPDoc,
 .VPContent,
 .VPApp {
-    background-color: var(--vp-c-bg) !important;
     border: none !important;
+}
+
+/* Fat bold typography across the whole site */
+html body {
+    font-weight: 450;
+}
+
+.VPDoc h1, .VPDoc h2, .VPDoc h3, .VPDoc h4, .VPDoc h5, .VPDoc h6 {
+    font-weight: 800 !important;
+}
+
+.VPDoc p {
+    font-weight: 450 !important;
+}
+
+.VPDoc strong {
+    font-weight: 800 !important;
+}
+
+.VPHero .name {
+    font-weight: 900 !important;
+    letter-spacing: -0.03em !important;
+}
+
+.VPHero .text {
+    font-weight: 800 !important;
+}
+
+.VPHero .tagline {
+    font-weight: 600 !important;
+}
+
+.VPNavBarTitle .title {
+    font-weight: 800 !important;
 }
 
 /* Misc styling */
@@ -243,7 +276,35 @@ html {
     background: #000;
 }
 
+/* Full-page gradient background support */
+.vp-page-gradient-bg {
+    position: fixed !important;
+    inset: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    z-index: -1 !important;
+    pointer-events: none !important;
+}
+
 /* Homepage Hero Adjustments */
+.VPHero, .VPHomeHero {
+    position: relative !important;
+    background: transparent !important;
+}
+
+/* Ensure the content is above the gradient */
+.VPHero .container, .VPHomeHero .container {
+    position: relative !important;
+    z-index: 5 !important;
+}
+
+/* Make ALL page containers transparent so gradient shows through */
+.VPContent.is-home,
+.VPHome,
+.VPApp {
+    background: transparent !important;
+}
+
 .VPHero.has-image .container {
     padding-top: 4rem;
 }
@@ -259,15 +320,28 @@ html {
 
 /* Feature Cards Glow */
 .VPFeature {
-    border: 1px solid var(--vp-c-divider) !important;
-    background-color: rgba(153, 209, 156, 0.02) !important;
+    border: 1px solid rgba(153, 209, 156, 0.3) !important;
+    background-color: rgba(0, 0, 0, 0.55) !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
     transition: all 0.3s ease !important;
 }
 
 .VPFeature:hover {
     border-color: var(--vp-c-brand-1) !important;
-    background-color: rgba(153, 209, 156, 0.05) !important;
+    background-color: rgba(0, 0, 0, 0.75) !important;
+    box-shadow: 0 0 24px rgba(153, 209, 156, 0.2) !important;
     transform: scale(1.02);
+}
+
+.VPFeature .title {
+    font-weight: 800 !important;
+    font-size: 1.1rem !important;
+}
+
+.VPFeature .details {
+    font-weight: 500 !important;
+    opacity: 0.85;
 }
 
 /* Gallery Special Styles */

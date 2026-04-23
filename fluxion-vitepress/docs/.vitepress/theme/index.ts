@@ -2,11 +2,13 @@ import DefaultTheme from 'vitepress/theme'
 import { inBrowser } from 'vitepress'
 import './custom.css'
 import Layout from './Layout.vue'
+import ScrollSplitCard from './components/ScrollSplitCard.vue'
 
 export default {
     extends: DefaultTheme,
     Layout,
-    enhanceApp({ router }: { router: any }) {
+    enhanceApp({ app, router }: { app: any, router: any }) {
+        app.component('ScrollSplitCard', ScrollSplitCard)
         if (inBrowser) {
             // --- Google Analytics State ---
             let scrollDepths = { 25: false, 50: false, 75: false, 90: false };
